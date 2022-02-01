@@ -19,8 +19,8 @@ namespace eShop.WebMvc.Controllers
 
             Product product = new Product()
             {
-                Code = "Widge 001",
-                Description = "Widge 001"
+                Code = "Widge 002",
+                Description = "Widge 002"
             };
 
             Variant variantSize = new Variant();
@@ -30,19 +30,19 @@ namespace eShop.WebMvc.Controllers
             VariantOption variantOptionLarge = new VariantOption();
             variantOptionLarge.Option = "large";
             variantOptionLarge.ProductId = product.Id;
-            variantOptionLarge.Sku = "widge_001_L";
+            variantOptionLarge.Sku = "widge_002_L";
             variantOptionLarge.Price = 100;
 
             VariantOption variantOptionSmall = new VariantOption();
             variantOptionSmall.Option = "Small";
             variantOptionSmall.ProductId = product.Id;
-            variantOptionSmall.Sku = "widge_001_S";
+            variantOptionSmall.Sku = "widge_002_S";
             variantOptionSmall.Price = 80;
 
             VariantOption variantOptionMedium = new VariantOption();
             variantOptionMedium.Option = "Medium";
             variantOptionMedium.ProductId = product.Id;
-            variantOptionMedium.Sku = "widge_001_M";
+            variantOptionMedium.Sku = "widge_002_M";
             variantOptionMedium.Price = 90;
 
 

@@ -1,11 +1,7 @@
 ﻿namespace eShop.Core.IRpositories
 {
-    public interface IProductRepository
+    public interface IProductRepository : IBaseRepository<Product>
     {
-        public Task<IEnumerable<Product>> GetAllAsync();
-
-        public Task<Product> GetByIdAsync(string id);
-
-        public Task AddAsync(Product product);
+        public Task<IEnumerable<Product>> GetAllByCodeAsync(string code);
     }
 }
